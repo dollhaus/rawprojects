@@ -1,0 +1,32 @@
+
+    body{
+        background-color: #99AAB5;
+    }
+    span {
+        background-color: #f1f1f1;
+        display: block;
+        margin: 5px;
+        padding: 10px 0px 10px 20px;
+        border-radius: 10px;
+    }
+    h1{
+        font-family: "Calibri", Arial, serif;
+        color: #ff6961;
+        margin-top: 0px;
+    }
+    h3{
+            font-family: "Calibri", Arial, serif;
+            color: #f1f1f1;
+            margin-top: 0px;
+    }
+     p {
+            font-family: "Calibri", Arial, serif;
+            color: #2C2F33;
+            margin-bottom: 0px;
+    }
+    .InfoBlock {
+        padding: 10px;
+        margin: 0px 20px 10px 0px;
+        background-color: #99AAB5;
+        border-radius: 10px;
+    }
