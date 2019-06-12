@@ -31,7 +31,7 @@ test = False
  
 # Uses Requests to fetch HTML from static host: https://2.python-requests.org//en/latest/
 print("Fetching HTML template")
-wpgMessage = (requests.get('https://raw.githubusercontent.com/r0tekatze/rawprojects/master/wpghome.html')).text
+wpgMessage = "";
 
 
 
@@ -72,6 +72,7 @@ def display():
         wpgHashes = hashDataHTML
         wpgHashList = hashListHTML
         print("vars assigned")
+        wpgMessage = (open('wpghome.html')).read()
         contents = wpgMessage.format(**locals())
         print("vars formatted")
         browseLocal(contents)
