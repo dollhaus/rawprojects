@@ -22,6 +22,11 @@ hashOut = ''
 hashList = []
 recordList = []
 
+currentDataHTML = ""
+hashDataHTML = ""
+hashListHTML = ""
+
+
 test = False
  
 # Uses Requests to fetch HTML from static host: https://2.python-requests.org//en/latest/
@@ -45,6 +50,15 @@ def setTestConditions():
 
 
  
+def createSpans():
+    for str in currentData:
+        currentDataHTML = currentDataHTML + "<span>" + str + "</span>"
+    for str in hashData:
+        hashDataHTML = hashDataHTML + "<span>" + str + "</span>"
+    for str in hashList:
+        hashListHTML = hashListHTML + "<span>" + str + "</span>"
+
+
 # Send data to html page and display page
 def display():
     try:       
@@ -53,9 +67,10 @@ def display():
             setTestConditions()
 
         print("trying...")
-        blockData = currentData
-        wpgHashes = hashData
-        wpgHashList = hashList
+        createSpans()
+        blockData = currentDataHTML
+        wpgHashes = hashDataHTML
+        wpgHashList = hashListHTML
         print("vars assigned")
         contents = wpgMessage.format(**locals())
         print("vars formatted")
