@@ -180,7 +180,7 @@ def main():
             elif choice == "1":
                 sesObj()
             elif choice == "2":
-                display(data=currentData, hashData=currentHash, aHashList=hashList)
+                display()
             elif choice == "3":
                 genHash()
             elif choice == "4":
